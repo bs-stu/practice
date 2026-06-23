@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD 測試</title>
+    <style>
+        body { margin: 20px; font-family: sans-serif; text-align: center; }
+        .box { 
+            background: #74b9ff; color: white; padding: 20px; 
+            margin-bottom: 15px; border-radius: 8px; font-size: 20px;
+        }
+        /* 當螢幕寬度大於 600px（電腦版）才啟動並排 */
+        @media (min-width: 600px) {
+            .container { display: flex; gap: 15px; }
+            .box { flex: 1; margin-bottom: 0; }
+        }
+    </style>
+</head>
+<body>
+    <h2>請縮放視窗測試</h2>
+    <div class="container">
+        <div class="box" style="background:#ff7675;">區塊 A</div>
+        <div class="box" style="background:#74b9ff;">區塊 B</div>
+        <div class="box" style="background:#2ed573;">區塊 C</div>
+    </div>
+</body>
+</html>
